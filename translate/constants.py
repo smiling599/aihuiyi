@@ -11,9 +11,9 @@ DB_CONFIG = {
 AI_BASE_URL = "https://agentapi.baidu.com/assistant/getAnswer"
 AI_APP_ID = "vtUzKD9XI7AQrFlkctsYIBzgYnYxVwKd"
 AI_SECRET_KEY = "Mz5PHn9cL0d024vKc07kXIDumTcYd5WI"
-AI_SOURCE = "xxx"
+AI_SOURCE = "vtUzKD9XI7AQrFlkctsYIBzgYnYxVwKd"
 AI_FROM = "openapi"
-AI_OPEN_ID = "xxx"
+AI_OPEN_ID = "aihuiyi"
 
 # HTTP状态码
 HTTP_OK = 200
