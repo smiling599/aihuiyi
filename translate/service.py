@@ -89,9 +89,9 @@ def process_user_message(user_id, session_id, question, thread_id, db_util):
         json=ai_request_data,
         headers={'Content-Type': 'application/json'}
     )
-    
-    if response.status_code != HTTP_OK:
-        raise Exception(f'AI service error: Status code {response.status_code}')
+
+    print(response.status_code, " ", response.content)
+
     
     ai_response = response.json()
     if ai_response.get('status') != 0:
@@ -99,6 +99,8 @@ def process_user_message(user_id, session_id, question, thread_id, db_util):
     
     ai_result = ai_response['data']['content'][0]['data']
     new_thread_id = ai_response['data']['threadId']
+
+    print('in')
     
     # 存储消息记录
     sql = """
