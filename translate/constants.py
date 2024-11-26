@@ -27,4 +27,16 @@ ERROR_MISSING_PARAMS = 'Missing required parameters'
 ERROR_NO_PARAGRAPH = 'No paragraph data available'
 ERROR_AI_SERVICE = 'AI service error'
 ERROR_SERVER = 'Server error'
-ERROR_DATABASE = 'Database error' 
+ERROR_DATABASE = 'Database error'
+
+# API Response Codes
+API_CODE_SUCCESS = 200
+API_CODE_BAD_REQUEST = 400
+API_CODE_NOT_FOUND = 404
+API_CODE_SERVER_ERROR = 500
+
+# API Messages
+API_MSG_SUCCESS = "success"
+API_MSG_BAD_REQUEST = "bad request"
+API_MSG_NOT_FOUND = "not found"
+API_MSG_SERVER_ERROR = "server error" 
